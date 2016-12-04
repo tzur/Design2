@@ -15,6 +15,7 @@
 #import "MixerProcessor.h"
 #import "ProcessorFactory.h"
 #import "TonalPreocessor.h"
+#import "DrawProcessor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
