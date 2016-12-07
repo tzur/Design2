@@ -5,14 +5,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TonalOperation : NSObject
+@protocol Operation;
 
-/// Create an object that perform a tonal operation on the processor.
-/// operation is done subsquently.
-- (instancetype)initAndChangeTonalValueWithInput:(NSDictionary *)input;
+@interface TonalOperation : NSObject <Operation>
 
-/// Create an object with input that can be altered later.
-- (instancetype)initTonalValueWithInput:(NSDictionary *)input;
+/// Initialize with \c brightness the amount of brightness, \c contrast the amount of contrast
+/// and \c saturation the amount of saturation.
+- (instancetype)initWithBrightness:(CGFloat)brightness contrast:(CGFloat)contrast
+                        saturation:(CGFloat)saturation;
 
 @end
 

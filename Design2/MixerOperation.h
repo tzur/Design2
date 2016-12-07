@@ -5,9 +5,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MixerOperation : NSObject
 
-/// Create an object that perform a tonal operation on the processor.
-/// operation is done subsquently.
-- (instancetype)initAndMixWithInput:(NSDictionary *)input;
+
+/// Initialize with \c texture the texture to user mixer with and \c alpha.
+- (instancetype)initWithTexture:(LTTexture *)texture alphaBlending:(CGFloat)alpha;
 
 @end
 

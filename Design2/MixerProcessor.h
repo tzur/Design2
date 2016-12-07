@@ -12,9 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Initializes with \c input texture and \c output the output texture;
 - (instancetype)initWithInputTexture:(LTTexture *)input outputTexture:(LTTexture *)output;
-  
-/// Objects that defines the processor values.
-@property (strong, nonatomic) MixerOperation *mixerOperation;
+ 
+/// Secondary texture for blending.
+@property (strong, nonatomic) LTTexture *secondaryTexture;
+
+/// The alpha blending.
+@property (nonatomic) CGFloat alpha;
   
 @end
 

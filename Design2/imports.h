@@ -13,10 +13,10 @@
 #import "DrawOperation.h"
 #import "MixerOperation.h"
 #import "MixerProcessor.h"
-#import "ProcessorFactory.h"
 #import "TonalPreocessor.h"
 #import "DrawProcessor.h"
-#import "OperationEntry.h"
+#import "ViewModel.h"
+#import "TonalViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

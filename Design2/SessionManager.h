@@ -1,6 +1,7 @@
 // Copyright (c) 2016 Lightricks. All rights reserved.
 // Created by Zur Tene.
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 /// Object responsible for handling of \c Session objects .
@@ -18,8 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Redo last undone operation in currently worked on \c Session.
 - (Operation *)redoOperation;
 
-/// Returns the sequence of \c Operation objects applied on the working \c Session
-/// in the formed of \c NSArray .
+/// Returns an \c NSArray of \c Operation objects applied on the working \c Session
 - (NSArray<Operation *> *)operationsSequence;
 
 /// Returns the original \c LTTexture being worked on.
@@ -28,3 +28,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+/// TODO: textureOperation, ViewModel.

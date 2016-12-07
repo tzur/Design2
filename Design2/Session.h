@@ -5,12 +5,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Object representing an editing activity
+@class LTTexture;
+
+/// Object representing an editing activity.
 @interface Session : NSObject
 
 /// Array of \c Operation objects performed in this session. Where the first \c Operation
 /// is with index 0 .
-@property (readonly, nonatomic) NSArray<Operation *> *operations;
+@property (readonly, nonatomic) NSArray<id<Operation>> *operations;
 
 /// The \c LTTexture being worked on (as loaded) without the changes applied by the sequence of
 /// operations.

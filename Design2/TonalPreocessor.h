@@ -13,8 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// Initializes with \c input the input texture and \c output the output texture. 
 - (instancetype)initWithInputTexture:(LTTexture *)input outputTexture:(LTTexture *)output;
   
-/// Objects that defines the processor values.
-@property (strong, nonatomic) TonalOperation *tonalOperation;
+/// The amount of brightness.
+@property (nonatomic) CGFloat brightness;
+ 
+/// The amount of contrast.
+@property (nonatomic) CGFloat contrast;
+
+/// The amount of saturation.
+@property (nonatomic) CGFloat saturation;
   
 @end
 

@@ -12,15 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// Object that is responsible for activate the appropriate processors with respect to its given
 /// \c Operation array. This object will feed the processors input texture with its latest output
 /// texture.
-@interface ProcessingManager : NSObject
+@interface SessionProcessor : NSObject
   
-/// Initialize with \c processorFactory an object that creates processors from a given operation
-///\c output that is the texture to write to.
-- (instancetype)initWithProcessorFactory:(ProcessorFactory *)processorFactory
-                           OutputTexture:(LTTexture *)output;
+/// Initialize with \c output that is the texture to write to.
+- (instancetype)initWithOutputTexture:(LTTexture *)output;
   
 /// run the given \c operations at there appropriate processor on the given \c input texture. The
-/// \c operation[i] output texture is the \c operations[i+1] input texture.
+/// \c operation[i+1] is performed on the texture outputed by \c operations[i] .
 - (void)processOperationArray:(NSArray<id<Operation>> *)operations
                onInputTexture:(LTTexture *)input;
 

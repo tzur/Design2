@@ -7,8 +7,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Create an object that perform a tonal operation on the processor.
 /// operation is done subsquently.
-- (instancetype)initAndDrawWithInput:(NSDictionary *)input;
-
+/// Initialize with \c points represent the drawing, a linear line will be connected between two
+/// points, \c color the line color and \c thickness the line thickness.
+- (instancetype)initWithLinePoints:(NSArray<CGPoint> *)points withColor:(NSString *)color
+                         thickness:(CGFloat)thickness;
 @end
 
 NS_ASSUME_NONNULL_END

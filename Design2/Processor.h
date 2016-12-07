@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Run the processor.
 - (void)process;
+
+/// Adapt the processor settings to the given \c operation settings. It have no effect on settings
+/// that do not appear at \c operation.
+- (void)updateValuesWithOperation:(id<Operation>)operation;
   
 @end
 
