@@ -3,7 +3,33 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// Object responsible for handling of \c Session objects .
 @interface SessionManager : NSObject
+
+/// Returns \c instancetype with \c SessionIO .
+- (instancetype)initWithSessionIO:(SessionIO *)sessionIO;
+
+/// Replaces the current \c Session being worked on.
+- (void)replaceWorkingSession:(Session *)session;
+
+/// Adds editing \c operation to the session being worked on.
+- (void)addOperation:(Operation *)operation;
+
+/// Saves Session in file system.
+- (void)saveSession;
+
+/// Undo last performed operation in currently worked on \c Session.
+- (Operation *)undoOperation;
+
+/// Redo last undone operation in currently worked on \c Session.
+- (Operation *)redoOperation;
+
+/// Returns the sequence of \c Operation objects applied on the working \c Session
+/// in the formed of \c NSArray .
+- (NSArray<Operation *> *)operationsSequence;
+
+/// Returns the original \c LTTexture being worked on.
+- (LTTexture *)originalTexture;
 
 @end
 
