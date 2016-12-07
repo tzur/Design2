@@ -16,6 +16,7 @@
 #import "ProcessorFactory.h"
 #import "TonalPreocessor.h"
 #import "DrawProcessor.h"
+#import "OperationEntry.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

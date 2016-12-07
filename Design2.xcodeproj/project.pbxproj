@@ -39,6 +39,7 @@
 		0D1700791DF45EA1003E53B4 /* imports.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = imports.mm; sourceTree = "<group>"; };
 		0D5758F21DF6F22A00D296A2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		F0E583591DF803D800627BDA /* OperationEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationEntry.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +81,9 @@
 				0D1700581DF45CD4003E53B4 /* SessionIO.h */,
 				0D17005B1DF45CE0003E53B4 /* SessionManager.h */,
 				0D17005E1DF45D74003E53B4 /* ProcessingManager.h */,
-				0D1700611DF45DBD003E53B4 /* Operation.h */,
 				0D1700621DF45DCA003E53B4 /* Processor.h */,
+				0D1700611DF45DBD003E53B4 /* Operation.h */,
+				F0E583591DF803D800627BDA /* OperationEntry.h */,
 				0D1700631DF45DDF003E53B4 /* TonalOperation.h */,
 				0D1700661DF45DE8003E53B4 /* DrawOperation.h */,
 				0D1700691DF45DF2003E53B4 /* MixerOperation.h */,
