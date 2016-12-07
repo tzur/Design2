@@ -6,17 +6,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// Object responsible for handling of \c Session objects .
 @interface SessionManager : NSObject
 
-/// Returns \c instancetype with \c SessionIO .
-- (instancetype)initWithSessionIO:(SessionIO *)sessionIO;
-
 /// Replaces the current \c Session being worked on.
 - (void)replaceWorkingSession:(Session *)session;
 
 /// Adds editing \c operation to the session being worked on.
 - (void)addOperation:(Operation *)operation;
-
-/// Saves Session in file system.
-- (void)saveSession;
 
 /// Undo last performed operation in currently worked on \c Session.
 - (Operation *)undoOperation;

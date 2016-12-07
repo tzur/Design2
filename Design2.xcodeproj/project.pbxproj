@@ -12,6 +12,7 @@
 		0D17004B1DF42A9A003E53B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D17004A1DF42A9A003E53B4 /* Assets.xcassets */; };
 		0D17004E1DF42A9A003E53B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D17004C1DF42A9A003E53B4 /* LaunchScreen.storyboard */; };
 		0D17007A1DF45EA1003E53B4 /* imports.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D1700791DF45EA1003E53B4 /* imports.mm */; };
+		0D5758F41DF6F22A00D296A2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		0D1700751DF45E7A003E53B4 /* ProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessorFactory.h; sourceTree = "<group>"; };
 		0D1700781DF45EA1003E53B4 /* imports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imports.h; sourceTree = "<group>"; };
 		0D1700791DF45EA1003E53B4 /* imports.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = imports.mm; sourceTree = "<group>"; };
+		0D5758F21DF6F22A00D296A2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				0D1700751DF45E7A003E53B4 /* ProcessorFactory.h */,
 				0D1700781DF45EA1003E53B4 /* imports.h */,
 				0D1700791DF45EA1003E53B4 /* imports.mm */,
+				0D5758F21DF6F22A00D296A2 /* AppDelegate.h */,
+				0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */,
 			);
 			path = Design2;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D17007A1DF45EA1003E53B4 /* imports.mm in Sources */,
+				0D5758F41DF6F22A00D296A2 /* AppDelegate.mm in Sources */,
 				0D1700401DF42A9A003E53B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +335,7 @@
 				0D1700541DF42A9A003E53B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
