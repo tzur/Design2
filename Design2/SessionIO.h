@@ -19,10 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)saveSession:(Session *)session
          completion:(void (^)(NSError *))completion;
 
-
 /// Returns a new editing \c Session with the given \c image .
 - (Session *)createSessionFromImage:(UIImage *)image;
-
 
 @end
 
