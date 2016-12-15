@@ -12,15 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Array of \c Operation objects performed in this session. Where the first \c Operation
 /// is with index 0 .
-@property (readonly, nonatomic) NSArray<id<Operation>> *operations;
+@property (readonly, nonatomic) NSMutableArray<id<Operation>> *operations;
 
 /// The \c LTTexture being worked on (as loaded) without the changes applied by the sequence of
 /// operations.
-@property (readonly, nonatomic) LTTexture *originalTexture;
+@property (strong, nonatomic) LTTexture *originalTexture;
 
 /// Index of the last performed \c Operation in this session. This index can be only in the range
 /// (0, \c operations.count)
-@property (readonly, nonatomic) NSUInteger *currentOperation;
+@property (nonatomic) NSUInteger currentOperation;
 
 /// This object's unique identifier.
 @property (readonly, nonatomic) NSString *sessionID;

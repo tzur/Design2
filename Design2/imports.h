@@ -8,15 +8,18 @@
 #import "SessionManager.h"
 #import "Operation.h"
 #import "Processor.h"
-#import "ProcessingManager.h"
 #import "TonalOperation.h"
 #import "DrawOperation.h"
 #import "MixerOperation.h"
 #import "MixerProcessor.h"
 #import "TonalPreocessor.h"
 #import "DrawProcessor.h"
-#import "ViewModel.h"
 #import "TonalViewModel.h"
+#import "SessionProcessor.h"
+#import "RenderTask.h"
+#import "ProcessorFactory.h"
+#import "OperationAggregator.h"
+#import "TextureOperation.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

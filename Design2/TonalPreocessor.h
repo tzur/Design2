@@ -5,10 +5,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol Processor;
+
 @class TonalOperation, LTTexture;
 
 /// Object responsible for processing tonal operations.
-@interface TonalPreocessor : NSObject
+@interface TonalPreocessor : NSObject <Processor>
 
 /// Initializes with \c input the input texture and \c output the output texture. 
 - (instancetype)initWithInputTexture:(LTTexture *)input outputTexture:(LTTexture *)output;

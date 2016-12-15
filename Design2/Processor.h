@@ -15,9 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// Run the processor.
 - (void)process;
 
-/// Adapt the processor settings to the given \c operation settings. It have no effect on settings
-/// that do not appear at \c operation.
+/// Adapt the processor settings to the given \c operation settings. Each implementation should
+/// only handle its own kind of operation.
 - (void)updateValuesWithOperation:(id<Operation>)operation;
+
+/// Process the given \c randerTask.
+- (void)processRenderTask:(RenderTask *)renderTask;
+
+/// Defines a binary texture that allows processing operation where the value is 1.
+@property (strong, nonatomic) LTTexture *mask;
   
 @end
 

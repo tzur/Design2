@@ -6,25 +6,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol Processor;
+
 @class DrawOperation, LTVector2;
 
 /// Object responsible for processing draw operations.
-@interface DrawProcessor : NSObject
+@interface DrawProcessor : NSObject <Processor>
 
 /// Initializes with \c input texture and \c output the output texture;
 - (instancetype)initWithInputTexture:(LTTexture *)input outputTexture:(LTTexture *)output;
 
-/// The current start point of the draw.
-@property (strong, nonatomic) CGPoint startingPoint;
-
-/// The current end point of the draw.
-@property (strong, nonatomic) CGPoint endPoint;
-
-/// The color of the draw.
-@property (strong, nonatomic) CGColor color;
-  
-/// The draw thickness.
-@property (strong, nonatomic) CGFloat thickness;
+/// The processor will draw a line between the given \c startPoint to the given \c endPoint at the
+/// given \c color and \c thickness.
+/// The mapping is the following
+- (void)addLineBetweenStartingPoint:(CGPoint)startPoint andEndPoint:(CGPoint)endPoint
+                          withColor:(UIColor *)color andThickness:(CGFloat)thickness;
 
 @end
 

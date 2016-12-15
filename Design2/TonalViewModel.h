@@ -5,13 +5,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class TonalPreocessor;
+@class TonalPreocessor, SessionManager;
 
 @interface TonalViewModel : NSObject
 
 /// Initializes with the given \c processor.
-- (instancetype)intWithTonalProcessor:(TonalPreocessor *)processor;
-  
+- (instancetype)initWithSessionManager:(SessionManager *)sessionManager
+                        tonalProcessor:(TonalPreocessor *)tonalProcessor;
+
+- (void)processOperationArray:(NSArray<TonalOperation *> *)operations;
+
+/// Undo the last operation.
+- (void)undo;
+
 /// The current amount of brightnesss at the view. Change of this value will result in changing \c
 /// processor brightness.
 @property (nonatomic) CGFloat brightness;

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)undo;
   
 /// Redo the last operation.
-- (void)redo;
+- (id<Operation> _Nullable)redo;
 
 /// Loads a session with the given \c sessionID. The result will be at \c completion block.
 - (void)loadSessionWithSessionId:(NSString *)sessionID completion:(SessionLoadCompletion)completion;

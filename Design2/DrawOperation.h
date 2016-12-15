@@ -9,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// operation is done subsquently.
 /// Initialize with \c points represent the drawing, a linear line will be connected between two
 /// points, \c color the line color and \c thickness the line thickness.
-- (instancetype)initWithLinePoints:(NSArray<CGPoint> *)points withColor:(NSString *)color
+- (instancetype)initWithLinePoints:(NSArray<$(CGPoint)> *)points withColor:(NSString *)color
                          thickness:(CGFloat)thickness;
 @end
 

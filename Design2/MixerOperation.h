@@ -3,11 +3,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface MixerOperation : NSObject
 
 
-/// Initialize with \c texture the texture to user mixer with and \c alpha.
-- (instancetype)initWithTexture:(LTTexture *)texture alphaBlending:(CGFloat)alpha;
+/// Initialize with \c alpha the amount of alpha blending, \c bounds the bounds of the mixer texture
+/// and \c angle the angle of the mixer texture.
+- (instancetype)initWithAlphaBlending:(CGFloat)alpha withBounds:(CGRect)bounds
+                             andAngle:(CGFloat)angle;
 
 @end
 

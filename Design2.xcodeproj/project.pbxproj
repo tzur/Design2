@@ -13,6 +13,7 @@
 		0D17004E1DF42A9A003E53B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D17004C1DF42A9A003E53B4 /* LaunchScreen.storyboard */; };
 		0D17007A1DF45EA1003E53B4 /* imports.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D1700791DF45EA1003E53B4 /* imports.mm */; };
 		0D5758F41DF6F22A00D296A2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */; };
+		0D5759571DFD80E500D296A2 /* diffucltyBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5759561DFD80E500D296A2 /* diffucltyBackground.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,11 @@
 		0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		0D57590C1DF8637500D296A2 /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		0D57590F1DF86A8900D296A2 /* TonalViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TonalViewModel.h; sourceTree = "<group>"; };
+		0D5759121DF9986700D296A2 /* RenderTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderTask.h; sourceTree = "<group>"; };
+		0D5759161DF99B9900D296A2 /* ProcessorFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessorFactory.h; sourceTree = "<group>"; };
+		0D5759561DFD80E500D296A2 /* diffucltyBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diffucltyBackground.jpg; sourceTree = "<group>"; };
+		0D575A451DFEE1F900D296A2 /* OperationAggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationAggregator.h; sourceTree = "<group>"; };
+		0D575A481DFEEFBF00D296A2 /* TextureOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureOperation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		0D17003D1DF42A9A003E53B4 /* Design2 */ = {
 			isa = PBXGroup;
 			children = (
+				0D5759561DFD80E500D296A2 /* diffucltyBackground.jpg */,
+				0D5759161DF99B9900D296A2 /* ProcessorFactory.h */,
 				0D1700471DF42A9A003E53B4 /* Main.storyboard */,
 				0D17004A1DF42A9A003E53B4 /* Assets.xcassets */,
 				0D17004C1DF42A9A003E53B4 /* LaunchScreen.storyboard */,
@@ -89,12 +97,13 @@
 				0D17006C1DF45E03003E53B4 /* TonalPreocessor.h */,
 				0D17006F1DF45E0C003E53B4 /* MixerProcessor.h */,
 				0D1700721DF45E18003E53B4 /* DrawProcessor.h */,
-				0D1700781DF45EA1003E53B4 /* imports.h */,
-				0D1700791DF45EA1003E53B4 /* imports.mm */,
 				0D5758F21DF6F22A00D296A2 /* AppDelegate.h */,
 				0D5758F31DF6F22A00D296A2 /* AppDelegate.mm */,
 				0D57590C1DF8637500D296A2 /* MainViewModel.h */,
 				0D57590F1DF86A8900D296A2 /* TonalViewModel.h */,
+				0D5759121DF9986700D296A2 /* RenderTask.h */,
+				0D575A451DFEE1F900D296A2 /* OperationAggregator.h */,
+				0D575A481DFEEFBF00D296A2 /* TextureOperation.h */,
 			);
 			path = Design2;
 			sourceTree = "<group>";
@@ -102,6 +111,8 @@
 		0D17003E1DF42A9A003E53B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D1700781DF45EA1003E53B4 /* imports.h */,
+				0D1700791DF45EA1003E53B4 /* imports.mm */,
 				0D17003F1DF42A9A003E53B4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -165,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5759571DFD80E500D296A2 /* diffucltyBackground.jpg in Resources */,
 				0D17004E1DF42A9A003E53B4 /* LaunchScreen.storyboard in Resources */,
 				0D17004B1DF42A9A003E53B4 /* Assets.xcassets in Resources */,
 				0D1700491DF42A9A003E53B4 /* Main.storyboard in Resources */,

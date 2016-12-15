@@ -5,26 +5,29 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol Operation;
+@protocol Processor;
 
-@class LTTexture, ProcessorFactory;
+@class LTTexture, ProcessorFactory, RebderTask;
 
+/// Process completion block. On error \c outputTexture will be nil and \c error will be set.
+typedef void (^ProcessOperationCompletion)(LTTexture * _Nullable outputTexture,
+                                            NSError * _Nullable error);
 /// Object that is responsible for activate the appropriate processors with respect to its given
 /// \c Operation array. This object will feed the processors input texture with its latest output
 /// texture.
-@interface SessionProcessor : NSObject
+@interface SessionProcessor : NSObject <Processor>
   
 /// Initialize with \c output that is the texture to write to.
-- (instancetype)initWithOutputTexture:(LTTexture *)output;
-  
-/// run the given \c operations at there appropriate processor on the given \c input texture. The
-/// \c operation[i+1] is performed on the texture outputed by \c operations[i] .
-- (void)processOperationArray:(NSArray<id<Operation>> *)operations
-               onInputTexture:(LTTexture *)input;
-
-/// Process the given \c operation on the current texture with the appropriate processor.
-- (void)processOperation:(id<Operation>)operation;
+- (instancetype)initWithProcessorFactory:(ProcessorFactory *)processorFactory
+                           OutputTexture:(LTTexture *)output;
   
 @end
 
 NS_ASSUME_NONNULL_END
+
+/// TODO: completion.
+/// TODO: inject processors.
+/// TODO: undo inside feature, outside feature.
+/// TODO: Draw - array? alpha blend? fix the processor.
+/// My opinion Mixer - should be save as texture always.
+/// Mask drawing?
